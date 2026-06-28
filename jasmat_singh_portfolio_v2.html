@@ -1,0 +1,108 @@
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  .hero { padding: 4rem 2rem 3rem; text-align: center; border-bottom: 0.5px solid var(--border); }
+  .badge { display: inline-block; background: var(--bg-accent); color: var(--text-accent); font-size: 12px; padding: 4px 14px; border-radius: 20px; margin-bottom: 1.5rem; }
+  .hero h1 { font-size: 36px; font-weight: 500; color: var(--text-primary); margin-bottom: 0.5rem; }
+  .hero h1 span { color: var(--text-accent); }
+  .hero p { font-size: 16px; color: var(--text-secondary); max-width: 480px; margin: 0 auto 2rem; line-height: 1.7; }
+  .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary { background: var(--fill-accent); color: var(--on-accent); padding: 10px 24px; border-radius: var(--radius); font-size: 14px; border: none; cursor: pointer; }
+  .btn-secondary { background: transparent; color: var(--text-primary); padding: 10px 24px; border-radius: var(--radius); font-size: 14px; border: 0.5px solid var(--border-strong); cursor: pointer; }
+  .section { padding: 3rem 2rem; border-bottom: 0.5px solid var(--border); }
+  .section-label { font-size: 12px; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.5rem; }
+  .section h2 { font-size: 22px; font-weight: 500; color: var(--text-primary); margin-bottom: 2rem; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .service-card { background: var(--surface-1); border: 0.5px solid var(--border); border-radius: 12px; padding: 1.25rem; }
+  .service-icon { font-size: 24px; margin-bottom: 0.75rem; color: var(--text-accent); }
+  .service-card h3 { font-size: 15px; font-weight: 500; color: var(--text-primary); margin-bottom: 0.4rem; }
+  .service-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .project-card { background: var(--surface-1); border: 0.5px solid var(--border); border-radius: 12px; padding: 1.25rem; }
+  .project-tag { display: inline-block; background: var(--bg-success); color: var(--text-success); font-size: 11px; padding: 2px 10px; border-radius: 20px; margin-bottom: 0.75rem; }
+  .project-card h3 { font-size: 14px; font-weight: 500; color: var(--text-primary); margin-bottom: 0.4rem; }
+  .project-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+  .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-top: 2rem; }
+  .stat { background: var(--surface-1); border-radius: var(--radius); padding: 1rem; text-align: center; }
+  .stat-num { font-size: 24px; font-weight: 500; color: var(--text-accent); }
+  .stat-label { font-size: 13px; color: var(--text-secondary); margin-top: 4px; }
+  .contact { padding: 3rem 2rem; text-align: center; }
+  .contact h2 { font-size: 22px; font-weight: 500; margin-bottom: 0.5rem; }
+  .contact p { font-size: 15px; color: var(--text-secondary); margin-bottom: 1.5rem; }
+  .contact-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .contact-link { display: flex; align-items: center; gap: 8px; background: var(--surface-1); border: 0.5px solid var(--border); border-radius: var(--radius); padding: 10px 18px; font-size: 14px; color: var(--text-primary); cursor: pointer; text-decoration: none; }
+</style>
+
+<div class="hero">
+  <div class="badge"><i class="ti ti-bolt" aria-hidden="true"></i> Available for work</div>
+  <h1>Hi, I'm <span>Jasmat Singh</span></h1>
+  <p>I build smart automations and websites for businesses — so you can focus on what actually matters.</p>
+  <div class="cta-row">
+    <a class="btn-primary" href="https://wa.me/917009531200"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i> Work with me</a>
+    <button class="btn-secondary"><i class="ti ti-eye" aria-hidden="true"></i> View projects</button>
+  </div>
+</div>
+
+<div class="section">
+  <p class="section-label">What I do</p>
+  <h2>Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-robot" aria-hidden="true"></i></div>
+      <h3>n8n Automation</h3>
+      <p>Custom workflows that save hours of manual work every day.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-layout" aria-hidden="true"></i></div>
+      <h3>Website Design</h3>
+      <p>Clean, fast websites that turn visitors into customers.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
+      <h3>Lead Generation</h3>
+      <p>Automated systems that find and deliver leads 24/7.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-message-chatbot" aria-hidden="true"></i></div>
+      <h3>AI Chatbots</h3>
+      <p>Smart bots for WhatsApp and Instagram.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <p class="section-label">My work</p>
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <span class="project-tag">Automation</span>
+      <h3>Instagram Reel Analyzer</h3>
+      <p>Send any reel link and get an AI-powered summary back in 90 seconds.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-tag">AI</span>
+      <h3>Friend Reaction Bot</h3>
+      <p>Analyzes reels and generates natural human reactions automatically.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-tag">Coming soon</span>
+      <h3>Property Lead Finder</h3>
+      <p>Scrapes listings and delivers qualified leads to dealers daily.</p>
+    </div>
+  </div>
+  <div class="stats-row">
+    <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Projects built</div></div>
+    <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Automations running</div></div>
+    <div class="stat"><div class="stat-num">100%</div><div class="stat-label">No-code solutions</div></div>
+  </div>
+</div>
+
+<div class="contact">
+  <h2>Let's build something</h2>
+  <p>Got a business problem? I'll automate it.</p>
+  <div class="contact-links">
+    <a class="contact-link" href="https://wa.me/917009531200"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i> +91 70095 31200</a>
+    <a class="contact-link" href="https://instagram.com/jasmatsingh_17"><i class="ti ti-brand-instagram" aria-hidden="true"></i> @jasmatsingh_17</a>
+    <a class="contact-link" href="tel:+917009531200"><i class="ti ti-phone" aria-hidden="true"></i> Call me</a>
+  </div>
+</div>
